@@ -7,6 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class EcommerceApplication {
 
     public static void main(String[] args) {
+        // Add vm option -Duser.timezone=Asia/Kolkata
+        System.out.println(System.getProperty("user.timezone"));
         SpringApplication.run(EcommerceApplication.class, args);
     }
 }
